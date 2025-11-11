@@ -7,3 +7,17 @@ export const pedirDatos = () => {
 		}, 500);
 	});
 };
+
+export const perdirItemPorId = (id) => {
+	return new Promise((resolve, reject) => {
+		const item = data.find((el) => el.id === id);
+
+		if (item) {
+			resolve(item);
+		} else {
+			reject({
+				error: "No se encontró el producto",
+			});
+		}
+	});
+};

@@ -1,11 +1,17 @@
-import React from "react";
+import { useEffect, useState } from "react";
+import { perdirItemPorId } from "../helpers/pedirDatos";
+import ItemDetail from "./ItemDetail";
 
-function ItemDetailContainer() {
-	return (
-		<div>
-			<h1> ItemListContainer</h1>
-		</div>
-	);
-}
+const ItemDetailContainer = ({ itemId }) => {
+	const [item, setItem] = useState(null);
+
+	useEffect(() => {
+		perdirItemPorId(itemId).then((res) => {
+			setItem(res);
+		});
+	}, [itemId]);
+
+	return <div>{item && <ItemDetail item={item} />}</div>;
+};
 
 export default ItemDetailContainer;

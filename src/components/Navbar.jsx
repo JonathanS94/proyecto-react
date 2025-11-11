@@ -1,37 +1,28 @@
-import React from "react";
-
-function Navbar() {
+const Navbar = () => {
 	return (
-		<div>
-			<nav className="nav-bar">
-				<a href="#" className="logo">
-					<h1>YugiShop</h1>
-				</a>
-				<ul className="menu">
+		<header className="header">
+			<h1 className="logo">Mi Tienda</h1>
+			<nav className="nav">
+				<ul className="nav-menu">
 					<li>
-						<a className="menu-link" href="#">
+						<a className="nav-link active" href="#">
 							Inicio
 						</a>
 					</li>
 					<li>
-						<a className="menu-link" href="#">
-							Nosotros
-						</a>
-					</li>
-					<li>
-						<a className="menu-link" href="#">
+						<a className="nav-link" href="#">
 							Productos
 						</a>
 					</li>
 					<li>
-						<a className="menu-link" href="#">
+						<a className="nav-link" href="#">
 							Contacto
 						</a>
 					</li>
 				</ul>
 			</nav>
-		</div>
+		</header>
 	);
-}
+};
 
 export default Navbar;
