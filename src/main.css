@@ -61,10 +61,9 @@
 
 .productos-grilla {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
 }
-
 .producto {
 	background-color: pink;
 	border-radius: 0.5rem;

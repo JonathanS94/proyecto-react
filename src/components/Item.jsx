@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Item = ({ producto }) => {
 	return (
 		<div className="producto">
@@ -6,9 +8,9 @@ const Item = ({ producto }) => {
 				<h4>{producto.nombre}</h4>
 				<p>Precio: ${producto.precio}</p>
 				<p>Categoria: {producto.categoria.nombre}</p>
-				<a className="ver-mas" href={`/item/${producto.id}`}>
+				<Link className="ver-mas" to={`/item/${producto.id}`}>
 					Ver más
-				</a>
+				</Link>
 			</div>
 		</div>
 	);
