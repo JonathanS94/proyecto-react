@@ -1,15 +1,17 @@
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 import { perdirItemPorId } from "../helpers/pedirDatos";
 import ItemDetail from "./ItemDetail";
+import { useParams } from "react-router-dom";
 
-const ItemDetailContainer = ({ itemId }) => {
-	const [item, setItem] = useState(null);
+const ItemDetailContainer = () => {
+	const [item, setItem] = useState([null]);
+	const id = useParams().id;
 
 	useEffect(() => {
-		perdirItemPorId(itemId).then((res) => {
+		perdirItemPorId(Number(id)).then((res) => {
 			setItem(res);
 		});
-	}, [itemId]);
+	}, [id]);
 
 	return <div>{item && <ItemDetail item={item} />}</div>;
 };

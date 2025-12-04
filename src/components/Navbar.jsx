@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
 	return (
 		<header className="header">
@@ -5,19 +8,34 @@ const Navbar = () => {
 			<nav className="nav">
 				<ul className="nav-menu">
 					<li>
-						<a className="nav-link active" href="#">
+						<Link className="nav-link active" to="/">
 							Inicio
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a className="nav-link" href="#">
+						<Link className="nav-link" to="/nosotros">
+							Nosotros
+						</Link>
+					</li>
+					<li>
+						<Link className="nav-link" to="/productos">
 							Productos
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a className="nav-link" href="#">
-							Contacto
-						</a>
+						<Link className="nav-link" to="/productos/ropa">
+							Ropa
+						</Link>
+					</li>
+					<li>
+						<Link className="nav-link" to="/productos/accesorios">
+							Accesorios
+						</Link>
+					</li>
+					<li>
+						<Link className="nav-link" to="/productos/tecnologia">
+							Tecnología
+						</Link>
 					</li>
 				</ul>
 			</nav>
