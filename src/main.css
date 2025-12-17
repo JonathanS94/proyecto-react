@@ -131,7 +131,8 @@ a {
 }
 
 .item-count button,
-.agregar-al-carrito {
+.agregar-al-carrito,
+.enviar {
 	background-color: var(--clr-main);
 	border: 0;
 	width: 2rem;
@@ -150,14 +151,39 @@ a {
 }
 
 .item-count button:hover,
-.agregar-al-carrito:hover {
+.agregar-al-carrito:hover,
+.enviar:hover {
 	background-color: white;
 	color: black;
 }
 
-.agregar-al-carrito {
+.agregar-al-carrito,
+.enviar {
 	width: auto;
 	height: auto;
 	margin-top: 1rem;
 	padding: 1rem;
+}
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: flex-start;
+}
+
+.formulario input {
+	padding: 0.5rem;
+	width: 18rem;
+	border-radius: 0.5rem;
+	border: 2px solid var(--clr-main);
+}
+.formulario button {
+	padding: 0.5rem 1rem;
+	border: none;
+	background-color: var(--clr-main);
+	color: white;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: 0.2s;
 }
