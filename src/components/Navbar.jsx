@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CardWidget from "./CartWidget";
 
 const Navbar = () => {
 	return (
@@ -42,6 +43,9 @@ const Navbar = () => {
 						<Link className="nav-link" to="/contacto">
 							Contacto
 						</Link>
+					</li>
+					<li>
+						<CardWidget />
 					</li>
 				</ul>
 			</nav>
