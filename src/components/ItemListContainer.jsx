@@ -1,27 +1,25 @@
 import { useEffect, useState } from "react";
-import { pedirDatos } from "../helpers/pedirDatos";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 import { toCapital } from "../helpers/toCapital";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../firebase/config";
 
 const ItemListContainer = () => {
 	const [productos, setProductos] = useState([]);
 	const [titulo, setTitulo] = useState("Productos");
 
-	const { categoria } = useParams();
+	const categoria = useParams().categoria;
 
 	useEffect(() => {
-		pedirDatos().then((res) => {
-			if (categoria) {
-				// Filtra por el ID de la categoría del JSON
-				const filtrados = res.filter((prod) => prod.categoria.id === categoria);
+		const productosRef = collection(db, "productos");
 
-				setProductos(filtrados);
-				setTitulo(categoria);
-			} else {
-				setProductos(res);
-				setTitulo("Productos");
-			}
+		const q = categoria
+			? query(productosRef, where("categoria", "==", categoria))
+			: productosRef;
+
+		getDocs(q).then((res) => {
+			setProductos(res.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
 		});
 	}, [categoria]);
 

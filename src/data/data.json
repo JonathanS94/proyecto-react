@@ -5,10 +5,7 @@
 		"precio": 19.99,
 		"imagen": "https://placeholder.pics/svg/150",
 		"descripcion": "Camiseta ligera y transpirable, perfecta para hacer ejercicio.",
-		"categoria": {
-			"id": "ropa",
-			"nombre": "Ropa"
-		},
+		"categoria": "ropa",
 		"stock": 10
 	},
 	{
@@ -17,10 +14,7 @@
 		"precio": 49.99,
 		"imagen": "https://placeholder.pics/svg/150",
 		"descripcion": "Zapatillas con amortiguación avanzada para largas distancias.",
-		"categoria": {
-			"id": "ropa",
-			"nombre": "Ropa"
-		},
+		"categoria": "ropa",
 		"stock": 10
 	},
 	{
@@ -29,10 +23,7 @@
 		"precio": 24.99,
 		"imagen": "https://placeholder.pics/svg/150",
 		"descripcion": "Mochila resistente y espaciosa, ideal para el día a día escolar.",
-		"categoria": {
-			"id": "accesorios",
-			"nombre": "Accesorios"
-		},
+		"categoria": "accesorios",
 		"stock": 10
 	},
 	{
@@ -41,10 +32,7 @@
 		"precio": 29.99,
 		"imagen": "https://placeholder.pics/svg/150",
 		"descripcion": "Auriculares inalámbricos con sonido de alta calidad y batería de larga duración.",
-		"categoria": {
-			"id": "tecnologia",
-			"nombre": "Tecnología"
-		},
+		"categoria": "tecnologia",
 		"stock": 10
 	},
 	{
@@ -53,10 +41,7 @@
 		"precio": 79.99,
 		"imagen": "https://placeholder.pics/svg/150",
 		"descripcion": "Reloj con monitoreo de salud y notificaciones inteligentes.",
-		"categoria": {
-			"id": "tecnologia",
-			"nombre": "Tecnología"
-		},
+		"categoria": "tecnologia",
 		"stock": 10
 	},
 	{
@@ -65,10 +50,7 @@
 		"precio": 15.99,
 		"imagen": "https://placeholder.pics/svg/150",
 		"descripcion": "Gafas con protección UV y diseño moderno.",
-		"categoria": {
-			"id": "ropa",
-			"nombre": "Ropa"
-		},
+		"categoria": "ropa",
 		"stock": 10
 	},
 	{
@@ -77,10 +59,7 @@
 		"precio": 9.99,
 		"imagen": "https://placeholder.pics/svg/150",
 		"descripcion": "Bolígrafo elegante y duradero, perfecto para regalos.",
-		"categoria": {
-			"id": "accesorios",
-			"nombre": "Accesorios"
-		},
+		"categoria": "accesorios",
 		"stock": 10
 	},
 	{
@@ -89,10 +68,7 @@
 		"precio": 19.99,
 		"imagen": "https://placeholder.pics/svg/150",
 		"descripcion": "Cargador rápido y eficiente compatible con la mayoría de los dispositivos.",
-		"categoria": {
-			"id": "tecnologia",
-			"nombre": "Tecnología"
-		},
+		"categoria": "tecnologia",
 		"stock": 10
 	},
 	{
@@ -101,10 +77,7 @@
 		"precio": 14.99,
 		"imagen": "https://placeholder.pics/svg/150",
 		"descripcion": "Termo de alta calidad que mantiene las bebidas calientes o frías por horas.",
-		"categoria": {
-			"id": "accesorios",
-			"nombre": "Accesorios"
-		},
+		"categoria": "accesorios",
 		"stock": 10
 	},
 	{
@@ -113,10 +86,7 @@
 		"precio": 7.99,
 		"imagen": "https://placeholder.pics/svg/150",
 		"descripcion": "Libreta con cubierta dura y papel de alta calidad.",
-		"categoria": {
-			"id": "accesorios",
-			"nombre": "Accesorios"
-		},
+		"categoria": "accesorios",
 		"stock": 10
 	}
 ]
